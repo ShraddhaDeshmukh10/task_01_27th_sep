@@ -12,7 +12,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
 
-  /// Car Data
   final List<String> carBrands = [
     "Tesla",
     "BMW",
@@ -27,16 +26,16 @@ class _HomePageState extends State<HomePage> {
   ];
 
   final List<String> carModels = [
-    "Model S",
-    "X5",
-    "C-Class",
-    "A4",
-    "Camry",
-    "Civic",
-    "Mustang",
+    "Alto",
+    "Celirio",
+    "Ciaz",
+    "Swift",
+    "City",
+    "Verna",
+    "Amaze",
     "Creta",
     "Seltos",
-    "Altima",
+    "Kia",
   ];
 
   void _onItemTapped(int index) {
@@ -60,7 +59,6 @@ class _HomePageState extends State<HomePage> {
       ),
       body: pages[_selectedIndex],
 
-      /// Bottom Navigation Bar
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
